@@ -18,7 +18,7 @@ namespace Mute_OBS_WS
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
-                    services.AddHostedService<Worker>();
+                    services.AddHostedService<OBSMonitorWorker>();
                 });
     }
 }
